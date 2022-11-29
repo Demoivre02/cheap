@@ -45,11 +45,11 @@ function AdminPassword() {
                     </div>
 
                         <div className='bg-[#554E90]   my-4 p-1 cursor-pointer rounded-lg text-[#fff]  text-center'>
-                            <p>Pay</p>
+                            <p className='text-sm'>Change Password</p>
                         </div>
 
                         <div className='bg-transparent text-[#333333] border-2  my-4 p-1 cursor-pointer rounded-lg text-[#fff]  text-center'>
-                            <p>Cancel</p>
+                            <p className='text-sm'>Cancel</p>
                         </div>
 
 

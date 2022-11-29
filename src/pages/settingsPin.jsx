@@ -44,7 +44,7 @@ function SettingsPin() {
                         </div>
 
                             <div className='bg-[#554E90]   my-4 p-1 cursor-pointer rounded-lg text-[#fff]  text-center'>
-                                <p>Pay</p>
+                                <p>Change Pin</p>
                             </div>
 
                             <div className='bg-transparent text-[#333333] border-2  my-4 p-1 cursor-pointer rounded-lg text-[#fff]  text-center'>

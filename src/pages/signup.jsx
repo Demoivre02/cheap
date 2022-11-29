@@ -48,10 +48,10 @@ function Signup() {
             </Link>
 
 
-            <div className='p-3 bg-[#0E3F74] mt-8 bg-transparent cursor-pointer border-2 border-[#0E3F74]  hover:text-[#0E3F74] text-[#0E3F74] rounded-lg m-auto text-xl w-[45%]'>
+            <div className='p-3 bg-[#0E3F74] mt-8 bg-white cursor-pointer border-2 border-[#0E3F74]  hover:text-[#0E3F74] text-[#0E3F74] rounded-lg m-auto text-xl w-[45%]'>
                 <button className='flex items-center m-auto text-center'>
                 <Icon icon="logos:google-icon" color="white" width="20" />
-                 <p className='text-base ml-4'>Sign up with Google</p> 
+                 <p className='text-base ml-4 text-[#0E3F74]'>Sign up with Google</p> 
                 </button>
             </div>
 

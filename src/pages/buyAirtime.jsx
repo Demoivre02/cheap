@@ -56,7 +56,7 @@ function BuyAirtime() {
                     </div>
 
                     <div className='bg-[#554E90]   my-4 p-1 rounded-sm text-[#fff]  text-center'>
-                        <p>Pay</p>
+                        <p className='text-sm'>Pay</p>
                     </div>
 
                 </div>

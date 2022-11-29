@@ -47,9 +47,9 @@ function Education() {
                   <Icon icon="emojione-monotone:back-arrow" color="#333" width="30" />
             </div>
 
-            <div className='bg-[#fff] rounded-lg w-[70%] mt-8 p-4 py-8'>
+            <div className='bg-[#fff] rounded-lg w-[70%] mt-4 p-4 py-8'>
 
-                    <p className='my-4'>Pay Internet Bills</p>
+                    <p className='my-4'>Education</p>
                         <div className='grid grid-cols-2  gap-2'>
                             {EducationArray.map((items)=>{
                                 return <Link to={items.link}>  <div key={items.id} className='bg-[#F2F2F2] w-[90%] cursor-pointer p-2 px-4 flex justify-between items-center  rounded-lg'>
