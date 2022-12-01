@@ -15,7 +15,7 @@ function Home() {
         <nav>
             <div className="nav-container p-2 ">
                 <div className="logo-div">
-                    <h3 className="logo">Logo</h3>
+                    <img src='/assets/logo.png' />
                 </div>
                 <div className='flex   justify-between'>
                     <ul className="list-body ">
@@ -26,13 +26,13 @@ function Home() {
 
                     <div className="buttons flex justify-around w-[30%]">
                         <Link to="/login">
-                            <div className=" p-1 border hover:bg-[#fff] hover:text-[#000] rounded-sm text-center text-base w-[80px] text-white ">
+                            <div className=" p-1 border hover:bg-[#fff] rounded-lg hover:text-[#000] h-[40px] text-center  text-base w-[100px] flex items-center justify-center text-white ">
                             Login
                              </div>
                         </Link>
 
                             <Link to="signup ">
-                                <div className=" bg-[#fff] hover:bg-transparent hover:text-[#fff] hover:border p-1 rounded-sm ml-6 text-center text-base w-[80px] ">
+                                <div className=" bg-[#fff] hover:bg-transparent rounded-lg hover:text-[#fff] hover:border p-1 h-[40px] ml-6 text-center text-base w-[100px] flex items-center justify-center ">
                                     Register
                                 </div>
                         </Link>
@@ -71,13 +71,13 @@ function Home() {
                     <div>
                         <p className="hero-text ">We offer the cheapest and best quality subscriptions such
                             as cheapest instant activation on data and airtime 
-                            purchases both Vtu / top up and
+                            purchases both Vtu top up and
                             share Airtime for all networks.
                         </p>
                     </div>
                     <div className="bg-[#564CB4] md:m-0  m-auto md:my-4 my-4 w-[40%]  sm:w-[25%] rounded-lg p-2 text-center cursor-pointer text-[#fff] mt-4 getStarted">
                     <Link to="/signup">
-                        <p className='sm:text-base text-sm'>Get Started</p>
+                        <p className='sm:text-xl p-2 text-sm'>Get Started</p>
                     </Link>
                        
                     </div>
@@ -97,22 +97,22 @@ function Home() {
         <div className="attest-body p-4">
             <div className="attest-flex p-4">
                 <div>
-                    <p className='font-bold'>Transactions</p>
-                    <h2 className='text-3xl font-medium mt-4'>87k+</h2>
+                    <p className='font-bold '>Transactions</p>
+                    <h2 className=' mt-4'>87k+</h2>
                 </div>
 
-                <hr/>
+                <hr className='attest-hr'/>
 
                 <div>
                     <p className='font-bold'>Customers</p>
-                    <h2 className='text-3xl font-medium mt-4'>2K+</h2>
+                    <h2 className=' mt-4'>2K+</h2>
                 </div>
 
-                <hr/>
+                <hr className='attest-hr'/>
 
                 <div>
                     <p className='font-bold'>Experience</p>
-                    <h2 className='text-3xl font-medium mt-4'>10years</h2>
+                    <h2 className=' mt-4'>10years</h2>
                 </div>
 
             </div>
@@ -126,7 +126,7 @@ function Home() {
 <section className="service-section">
 
         <div className="services-header">
-            <h2 className='text-2xl font-semibold'>Our services</h2>
+            <h2 className=''>Our services</h2>
         </div>
 
 
@@ -134,12 +134,12 @@ function Home() {
         <div className="flex-section">
 
             <div className="networks-img-div">
-                <img className="networks-div" src="/assets/networks-div.png" alt=""/>
+                <img className="networks-div" src="/assets/Group 289376 1.png" alt=""/>
             </div>
 
             <div className="services-text">
                 <div className='mt-8'>
-                    <h3 className=" font-bold text-2xl mb-4 serveices-text-header">
+                    <h3 className=" serveices-text-header">
                         Data Sales
                     </h3>
                     <p>
@@ -148,7 +148,7 @@ function Home() {
                 </div>
 
                 <div className='mt-8'>
-                    <h3 className=" font-bold mb-4  serveices-text-header">
+                    <h3 className=" font-bold serveices-text-header">
                         Airtime Topup
                     </h3>
                     <p>
@@ -158,12 +158,14 @@ function Home() {
                 </div>
 
                 <div className='mt-8'>
-                    <h3 className=" font-bold mb-4  serveices-text-header">
-                        Convert Airtime to Cash
-                    </h3>
-                    <p>
-                        We convert all network airtime to cash instantly
-                    </p>
+                    <div style={{borderBottom:0}} className=''>
+                        <h3 className=" font-bold  serveices-text-header">
+                        Convert Airtime to Cash   
+                        </h3>
+                    </div>
+                  
+                        <p> We convert all network airtime to cash instantly</p>
+
                 </div>
                 
             </div>
@@ -176,31 +178,22 @@ function Home() {
         <div className="flex-section-2">
 
             <div className="service-two-text">
+                <div className='push'>
 
-                <div className="service-2-text-header">
-                    <h3 className='font-bold mb-4  text-xl  '>Cable Tv Subscription and Bills Payment</h3>
-                </div>
-                
-                <div>
-                  <p className='w-[70%] sm:m-0 m-auto'> Swift and instant TV subscriptions and bills payment</p> 
+                    <div className="service-2-text-header">
+                        <h3 className=''>Cable Tv Subscription and Bills Payment</h3>
+                    </div>
+                    
+                    <div>
+                    <p className='w-[70%] sm:m-0 m-auto'> Swift and instant TV subscriptions and bills payment</p> 
+                    </div>
+
                 </div>
 
             </div>
 
             <div className="logos-div">
-                <img className="logo-item" src="/assets/dstv.png" alt=""/>
-                <img className="logo-item" src="/assets/gotv.png" alt=""/>
-                <img className="logo-item" src="/assets/Startime 1.png" alt=""/>
-                <img className="logo-item" src="/assets/eedc.png" alt=""/>
-                <img className="logo-item" src="/assets/ekdc.png" alt=""/>
-                <img className="logo-item" src="/assets/ibedc.png" alt=""/>
-                <img className="logo-item" src="/assets/Port-Harcourt-Electricity-Distribution-PHED 1.png" alt=""/>
-                <img className="logo-item" src="/assets/ikedc 1.png" alt=""/>
-                <img className="logo-item" src="/assets/AEDC 1.png" alt=""/>
-                <img className="logo-item" src="/assets/yedc.png" alt=""/>
-                <img className="logo-item" src="/assets//Kaduna-Electric-KAEDCO 1.png" alt=""/>
-                <img className="logo-item" src="/assets/Jos-Electric-JED 1.png" alt=""/>
-                <img className="logo-item" src="/assets/kedco.png" alt=""/>
+               <img  src='/assets/Group 289377 2.png' />
             </div>
         </div>
 
@@ -213,37 +206,58 @@ function Home() {
 <section className="scroller-section">
 
         <div className="scroller-div">
+
+        <Swiper
+            slidesPerView={3}
+            spaceBetween={3}
+            pagination={{
+            clickable: true
+            }}
+            >
+        <SwiperSlide>
             <div>
                 <img src="/assets/image 1.png" alt=""/>
                 <div className="image-text-body">
                     <p className="scroller-img-text">Convert airtime to cash</p>
                 </div>
             </div>
+        </SwiperSlide>
 
+        <SwiperSlide>
             <div>
                 <img src="/assets/image 2.png" alt=""/>
                 <div className="image-text-body">
                     <p className="scroller-img-text">95% automated secure services</p>
                 </div>
             </div>
+        </SwiperSlide>
+        <SwiperSlide>
             <div>
                 <img src="/assets/image 3.png" alt=""/>
                 <div className="image-text-body">
                 <p className="scroller-img-text">Instant and secure wallet funding</p> 
                 </div>
             </div>
+        </SwiperSlide>
+        <SwiperSlide>     
             <div>
                 <img src="/assets/image 4.png" alt=""/>
                 <div className="image-text-body">
                     <p className="scroller-img-text">Available 24/7</p>
                 </div>
             </div>
-            <div>
+        </SwiperSlide>
+        <SwiperSlide>
+             <div>
                 <img src="/assets/image 5.png" alt=""/>
                 <div className="image-text-body">
                     <p className="scroller-img-text">Fastest deals and quick resolution services</p>
                 </div>
             </div>
+        </SwiperSlide>
+      </Swiper>
+
+
         </div>
 
        
@@ -299,13 +313,16 @@ function Home() {
 
 
 
-<section>
+<section className='circle-section'>
     <div  style={{background:"url('/assets/mission.png')"
       ,backgroundSize:"cover",overflow:"hidden"}}  className="mission-container">
         <div className="circle-container">
             <div className="circle">
-                <h3>Our Mission</h3>
-                <p> To deliver best service in the quickest amount of time.</p>
+                <div>
+                    <h3>Our Mission</h3>
+                    <p> To deliver best service in the quickest amount of time.</p>
+                </div>
+
             </div>
         </div>
     </div>
@@ -320,33 +337,50 @@ function Home() {
         <div className="form-div">
            <h3>How can we help you</h3> 
             <form action="">
-                <input className="text-input" type="text" placeholder="Your full name"/><br/><br/>
-                <input type="email" name="" className="text-email" placeholder="Your email" id=""/><br/><br/>
-                <input type="tel" name="" id="" className="text-phone" placeholder="Phone Number"/><br/><br/>
-                <textarea name="" id="" cols="30" rows="5" placeholder="Your message"></textarea>
+                <input className="form-input" type="text" placeholder="Your full name"/><br/><br/>
+                <input type="email" name="" className="form-input" placeholder="Your email" id=""/><br/><br/>
+                <input type="tel" name="" id="" className="form-input" placeholder="Phone Number"/><br/><br/>
+                <textarea name="" id="" cols="30" rows="5" placeholder="Your message"></textarea> <br/> <br/>
+                <input className='submit-form' type={"submit"}/>
+
             </form>
         </div>
 
         <div  className="contact-div">
             <h3>Contact us</h3>
-                <div className="location className=' flex items-center'">
-                    <Icon className='mr-2 mt-[1em]'  icon="material-symbols:location-on" color="#000"  width="25" />
-                    <p> 5 Agbo street, off Micheal umodu labour institute olunlade, Ilorin Kwara state
-                    </p>
+
+                <div style={{alignItems:"center"}}  className="location">
+
+                    <div>
+                        <Icon className=''  icon="material-symbols:location-on-outline" color="#000"  width="20" />
+                    </div>
+
+                    <div>
+                        <p> 5 Agbo street, off Micheal umodu labour institute olunlade, Ilorin Kwara state
+                        </p>
+                    </div>
+
                 </div>
+
                 <div className="phone">
-                    <div className=' flex items-center'>
-                        <Icon className='mr-2 mt-[1em]' icon="material-symbols:phone-in-talk" color="#000" width="20" />
+
+                    <div style={{alignItems:"center"}}  className='flex items-center'>
+                        <Icon className='mr-2 ' icon="material-symbols:phone-in-talk" color="#000" width="15" />
                         <p>+111111111</p>
                     </div>
-                    <div>
-                        <Icon className='mr-2 mt-[1em]' icon="ic:baseline-whatsapp" color="#000" width="20" />
+
+                    <div style={{alignItems:"center"}} >
+                        <Icon className='mr-2 ' icon="ic:baseline-whatsapp" color="#000" width="15" />
                         <p>+000111100</p>
                     </div>
+                    
                 </div>
-                <div className="location">
-                    <Icon className='mr-2 mt-[1em]' icon="mdi:envelope-outline" color="#000" width="20" />
-                    <p> cheapdatasale@gmail.com</p>
+                <div style={{alignItems:"center"}} className="location">
+                    <Icon className='mr-2 ' icon="mdi:envelope-outline" color="#000" width="20" />
+                    <div>
+                        <p> cheapdatasale@gmail.com</p>
+                    </div>
+                   
                 </div>
         </div>
 
@@ -374,10 +408,10 @@ function Home() {
         <ul className="footer-list-body">
             <li className="footer-list-item" >Our service</li>
             <li className="footer-list-item" >Our mission</li>
-            <li className="footer-list-item" >
-                {/* <span><iconify-icon icon="akar-icons:instagram-fill" width="20"></iconify-icon></span>
-                <span><iconify-icon icon="bxl:facebook" width="20"></iconify-icon></span>
-                <span><iconify-icon icon="akar-icons:twitter-fill" width="20"></iconify-icon></span> */}
+            <li className="footer-list-item icons" >
+                <span><Icon icon="mdi:instagram" color="white" width="20" /></span>
+                <span><Icon icon="ri:facebook-fill" color="white" width="20" /></span>
+                <span><Icon icon="mdi:twitter" color="white" width="20" /></span>
             </li>
         </ul>
     </div>
