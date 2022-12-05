@@ -380,12 +380,12 @@ function Home() {
 
                     <div style={{alignItems:"center"}}  className='flex items-center'>
                         <Icon className='mr-2 ' icon="material-symbols:phone-in-talk" color="#000" width="15" />
-                        <p>+111111111</p>
+                        <p className='contact-numbers' >+111111111</p>
                     </div>
 
-                    <div style={{alignItems:"center"}} >
+                    <div  style={{alignItems:"center"}} >
                         <Icon className='mr-2 ' icon="ic:baseline-whatsapp" color="#000" width="15" />
-                        <p>+000111100</p>
+                        <p className='contact-numbers' >+000111100</p>
                     </div>
                     
                 </div>

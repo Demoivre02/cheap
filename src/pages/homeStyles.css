@@ -96,6 +96,9 @@ nav{
         display: block;
         transform: scaleY(1);
     }
+    nav{
+        height: 70px;
+    }
 }
 
 
@@ -259,6 +262,9 @@ hr{
     .attest-flex div p{
         font-size: 14px;
     }
+    .attest-body{
+        height: auto;
+    }
     .hero-cta{
         font-size: 30px;
     }
@@ -278,7 +284,7 @@ hr{
         margin: auto;
     }
     .attest-flex{
-        width: 95%;
+        width: 98%;
     }
     .hero-text{
         font-weight: 400;
@@ -483,7 +489,7 @@ hr{
         text-align: center;
     }
     .services-text div p,.service-two-text div p,
-    .location p,.phone p,.footer-list-item,
+    .location p,.footer-list-item,
     .copyright p{
         font-size: 14px;
         margin: 10px auto;
@@ -793,6 +799,18 @@ input.form-input,textarea{
     .location,.phone{
         font-size: 14px;
     }
+    .phone{
+        display: block;
+    }
+    .phone div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    .contact-numbers{
+        margin: 10px 0;
+    }
+  
 }
 
 @media (max-width:700px){
@@ -800,6 +818,10 @@ input.form-input,textarea{
         display: flex;
         flex-direction: column-reverse;
         margin: 3em auto;
+        width: 100%;
+    }
+    .form-contact{
+        margin-bottom: 0;
     }
     .form-contact{
         margin-top: 1em;
@@ -812,11 +834,9 @@ input.form-input,textarea{
     ::placeholder{
         font-size: 12px;
     }
-    .phone{
-        display: block;
-    }
+
     .form-div{
-        width: 80%;
+        width: 92%;
         height: auto;
         margin: auto;
     }
@@ -855,6 +875,7 @@ input.form-input,textarea{
     .contact-div{
         margin-bottom: 1em;
     }
+
 }
 @media (max-width:500px){
     .form-div{
