@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './homeStyles.css'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -8,6 +8,12 @@ import { Icon } from '@iconify/react';
 import {Link} from 'react-router-dom'
 
 function Home() {
+
+    const [openNav, setOpenNav]=useState(false)
+    function handleNav(){
+        setOpenNav(!openNav)
+    }
+
   return (
    <React.Fragment>
      <header>
@@ -36,24 +42,32 @@ function Home() {
                                     Register
                                 </div>
                         </Link>
-                </div>
+                    </div>
 
                 </div>
 
                 
-                <div className="burger">
-                <Icon icon="fontisto:nav-icon" color="white" width="25" />
+                <div onClick={handleNav} className="burger">
+                    <Icon icon="fontisto:nav-icon" color="white" width="22" />
                 </div>
 
             </div>
         </nav>
 
-        <div className="mobilenav">
+        <div style={{display: openNav? "block" :"none"}} className="mobilenav">
             <div>
                 <ul className="mobileNavBody">
                     <li className="mobileNavItem" >Home</li>
                     <li className="mobileNavItem" >About us</li>
                     <li className="mobileNavItem" >Contact us</li>
+                    <div className=' translate-y-[100%]' >
+                        <Link to="/login">
+                            <li className="mobileNavItem font-medium cursor-pointer " >LOGIN</li>
+                        </Link>
+                        <Link to="/signup">
+                            <li className="mobileNavItem font-medium cursor-pointer">REGISTER</li>
+                        </Link>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -77,7 +91,7 @@ function Home() {
                     </div>
                     <div className="bg-[#564CB4] md:m-0  m-auto md:my-4 my-4 w-[40%]  sm:w-[25%] rounded-lg p-2 text-center cursor-pointer text-[#fff] mt-4 getStarted">
                     <Link to="/signup">
-                        <p className='sm:text-xl p-2 text-sm'>Get Started</p>
+                        <p className='sm:text-xl sm:p-2 p-1 text-sm'>Get Started</p>
                     </Link>
                        
                     </div>

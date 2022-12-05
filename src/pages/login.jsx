@@ -19,20 +19,20 @@ function Signup() {
           <form className=''>
            
             <div className='mt:mt-2 mt-0'>
-              <input style={{border:"2px solid  #C4C4C4"}} className=' m-auto lg:w-[45%] md:w-[65%] w-[85%] p-2 text-xl rounded-lg mt-4 ' type={"text"} name="email" placeholder=' Enter email'/>
+              <input style={{border:"2px solid  #C4C4C4"}} className=' m-auto lg:w-[45%] md:w-[65%] w-[85%] md:p-3 p-2 text-xl rounded-lg mt-4 ' type={"text"} name="email" placeholder=' Enter email'/>
             </div>
             <div className='mt:mt-2 mt-0'>
-              <input style={{border:"2px solid  #C4C4C4"}} className=' m-auto lg:w-[45%] md:w-[65%] w-[85%] p-3 text-xl rounded-lg mt-4 ' type={"text"} name="password" placeholder='Confirm Password'/>
+              <input style={{border:"2px solid  #C4C4C4"}} className=' m-auto lg:w-[45%] md:w-[65%] w-[85%] md:p-3 p-2 text-xl rounded-lg mt-4 ' type={"text"} name="password" placeholder='Confirm Password'/>
             </div>
 
             <Link to="/dashboard">
-              <div className='md:p-3 p-2 bg-[#0E3F74] text-base mt-4 hover:bg-transparent cursor-pointer hover:border-2 hover:text-[#0E3F74] text-[#fff] rounded-lg m-auto md:text-xl text-[12px] w-[45%]'>
+              <div className='md:p-3 p-2 bg-[#0E3F74] text-base md:mt-4 mt-8 hover:bg-transparent cursor-pointer hover:border-2 hover:text-[#0E3F74] text-[#fff] rounded-lg m-auto md:text-xl text-[12px] md:w-[45%] w-[80%]'>
                 Create Account
               </div>
             </Link>
 
 
-            <div className='p-3 bg-[#0E3F74] mt-8 bg-white cursor-pointer border-2 border-[#0E3F74]  hover:text-[#0E3F74] text-[#0E3F74] rounded-lg m-auto text-xl md:w-[45%] w-[80%]'>
+            <div className='p-3 bg-[#0E3F74] md:mt-8 mt-2 bg-white cursor-pointer border-2 border-[#0E3F74]  hover:text-[#0E3F74] text-[#0E3F74] rounded-lg m-auto text-xl md:w-[45%] w-[80%]'>
                 <button className='flex items-center m-auto text-center'>
                 <Icon icon="logos:google-icon" color="white" width="20" />
                  <p className='text-base ml-4 text-[#0E3F74]'>Sign in with Google</p> 

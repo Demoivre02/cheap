@@ -66,12 +66,14 @@ nav{
     background-color: #3E396B;
     display: none;
     padding-bottom:1em ;
+    height: 100vh;
 }
 
 .mobileNavItem{
     list-style: none;
     color: white;
     margin-bottom: 1em;
+    margin-left: 3em;
 }
 .burger{
     display: none;
@@ -88,7 +90,6 @@ nav{
     }
     .mobilenav{
         display: none;
-        transform: scaleY(0);
         transition:  transform display 150ms ease-in;
     }
     .show{
@@ -571,6 +572,12 @@ hr{
     .image-text-body{  
         width: 100%;
     }
+    .image-text-body p{
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+    }
 }
 
 /* MISSION */
@@ -604,7 +611,7 @@ hr{
 }
 
 .circle-section{
-    margin-top: 17em;
+    margin-top: 10em;
 }
 .circle p{
     color: white;
@@ -778,6 +785,7 @@ input.form-input,textarea{
     }
     .submit-form{
         font-size: 16px;
+        font-weight: 500;
     }
     .contact-div h3{
         font-size: 28px;
@@ -908,7 +916,7 @@ footer{
 }
 .copyright{
     text-align: center;
-    margin: 4em auto;
+    margin: 6em auto 2em;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
