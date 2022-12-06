@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function DashboardSidenav() {
   return (
-    <div >
+    <div className='h-full' >
         <div className='w-[150%] bg-[#fff] rounded-lg h-full  text-center text-[#554e90] border'>
 
               <div className='my-6'>

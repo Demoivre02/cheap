@@ -16,7 +16,7 @@ function Transaction() {
             
         </div>
 
-        <div className='flex justify-between w-[90%] my-4 items-center'>
+        <div className='flex justify-between md:text-base text-[12px] md:w-[90%] w-full my-4 items-center '>
             <p>Date </p>
             <p>Phone Number</p>
             <p>Data Type</p>

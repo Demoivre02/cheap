@@ -8,7 +8,7 @@ function Beneficiaries({img,name}) {
             
             <div className='flex flex-col mx-4 items-center'>
                 <img src={img} />
-                <p className='text-center'>{name}</p>
+                <p className='text-center xl:text-sm text-[12px]'>{name}</p>
             </div>
 
 

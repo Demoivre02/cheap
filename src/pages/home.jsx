@@ -21,7 +21,7 @@ function Home() {
         <nav>
             <div className="nav-container p-2 ">
                 <div className="logo-div">
-                    <img src='/assets/logo.png' />
+                    <img src='/assets/Logo-new.png' />
                 </div>
                 <div className='flex   justify-between'>
                     <ul className="list-body ">
@@ -191,23 +191,48 @@ function Home() {
     <div className="service-two-div">
         <div className="flex-section-2">
 
-            <div className="service-two-text">
+            <div className="service-two-text ">
                 <div className='push'>
 
-                    <div className="service-2-text-header">
-                        <h3 className=''>Cable Tv Subscription and Bills Payment</h3>
+                <div className="services-text second">
+                <div className='mt-8'>
+                    <h3 className=" serveices-text-header">
+                        Cable Tv Subscription
+                    </h3>
+                    <p>
+                        Swift and instant TV subscription
+                    </p>
+                </div>
+
+                <div className='mt-8'>
+                    <h3 className=" font-bold serveices-text-header">
+                        Electricity Payment
+                    </h3>
+                    <p>
+                        Fast bills payment
+
+                    </p>
+                </div>
+
+                <div className='mt-8'>
+                    <div style={{borderBottom:0}} className=''>
+                        <h3 className=" font-bold  serveices-text-header">
+                            Internet Subscription  
+                        </h3>
                     </div>
-                    
-                    <div>
-                    <p className='w-[70%] sm:m-0 m-auto'> Swift and instant TV subscriptions and bills payment</p> 
-                    </div>
+                  
+                        <p></p>
+
+                </div>
+                
+            </div>
 
                 </div>
 
             </div>
 
             <div className="logos-div">
-               <img  src='/assets/Group 289377 2.png' />
+               <img  src='/assets/Group 8.png' />
             </div>
         </div>
 
@@ -414,6 +439,11 @@ function Home() {
             <li className="footer-list-item" >Home</li>
             <li className="footer-list-item" >About us</li>
             <li className="footer-list-item" >Contact us</li>
+            <li className="footer-list-item icons" >
+                <span><Icon icon="mdi:instagram" color="white" width="20" /></span>
+                <span><Icon icon="ri:facebook-fill" color="white" width="20" /></span>
+                <span><Icon icon="mdi:twitter" color="white" width="20" /></span>
+            </li>
         </ul>
     </div>
 
@@ -422,11 +452,6 @@ function Home() {
         <ul className="footer-list-body">
             <li className="footer-list-item" >Our service</li>
             <li className="footer-list-item" >Our mission</li>
-            <li className="footer-list-item icons" >
-                <span><Icon icon="mdi:instagram" color="white" width="20" /></span>
-                <span><Icon icon="ri:facebook-fill" color="white" width="20" /></span>
-                <span><Icon icon="mdi:twitter" color="white" width="20" /></span>
-            </li>
         </ul>
     </div>
 </div>

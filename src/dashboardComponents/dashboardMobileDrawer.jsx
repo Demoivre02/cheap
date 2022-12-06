@@ -40,98 +40,86 @@ function Sidemobilenav() {
         <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
             <DrawerOverlay />
             <DrawerContent>
-            <DrawerBody className=' bg-[#171F34]'>
+            <DrawerBody className=' bg-[#fff]'>
             <div className='flex justify-between '>
               <div className='mb-8 mr-4'>
                   <Link to="/">
-                    <img src="images/logo.png" alt="" />
+                    <img src="/assets/Logo.png" alt="" />
                 </Link>
               </div>
+              
               <div className='mt-4' onClick={onClose}>
                 <Icon icon="ci:close-big" color="white" width="25" inline={true} />
               </div>
             </div>
 
+            <div className='my-2 ml-4'>
+                <div className='border border-[#554e90] rounded-full  w-fit p-1 border-dashed'>  
+                  <img  src='/assets/dashboard-nav-picture.png'/>
+                </div>
+                <p className='text-[#554e90]'>Patrick</p>
+              </div>
+
                 
               <ul className='justify-center items-center'>
                     <Link to="dashboard">
-                        <li className='w-full  hover:bg-slate-800 pt-2 pb-2'>
+                        <li className='w-full  hover:bg-slate-800 pt-2 mt-4 pb-2'>
                             <div className='w-11/12 ml-4 flex justify-between items-center'>
-                                <Icon icon="ic:sharp-dashboard" color="white" height="25" inline={true} />
+                            <Icon icon="ep:suitcase" color="#554e90" width="20" />
                             <div className='w-4/5' >
-                                    <p className='text-white text-left'> Dashboard</p>
+                                    <p className='text-[#554e90] text-left'> Dashboard</p>
                             </div> 
                             </div>
                         </li>
                     </Link>
                     <Link to="/transaction">
-                        <li className='w-full hover:bg-slate-800 pt-2 pb-2  items-center'>
+                        <li className='w-full hover:bg-slate-800 pt-2 mt-4 pb-2  items-center'>
                             <div className='ml-4 w-11/12 flex justify-between items-center'>
-                                <Icon icon="eos-icons:arrow-rotate" color="white" height="25" inline={true} />
+                            <Icon icon="material-symbols:account-balance-wallet" color="#554e90" width="20" />
                                 <div className='w-4/5' >
-                                    <p className='text-white text-left'>Transaction</p>
+                                    <p className='text-[#554e90] text-left'>Fund Wallet</p>
                                 </div>  
                             </div>     
                         </li>
                     </Link>
                     <Link to="/userpanel">
-                        <li className='w-full hover:bg-slate-800 pt-2 pb-2 items-center text-left'>
+                        <li className='w-full hover:bg-slate-800 pt-2 mt-4 pb-2 items-center text-left'>
                             <div className='ml-4 flex justify-between w-11/12 items-center'>
-                                <Icon icon="carbon:user-filled" color="white" height="25" inline={true} />
+                            <Icon icon="ic:round-history" color="#554e90" width="20" />
                                 <div className='w-4/5'>
-                                    <p className='text-white text-left'>User Panel</p> 
+                                    <p className='text-[#554e90] text-left'> Transaction History</p> 
                                 </div>  
                             </div>   
                         </li>
                     </Link>
                     <Link to="statistics">
-                        <li className='w-full items-center hover:bg-slate-800 pt-2 pb-2 text-left'>
+                        <li className='w-full items-center hover:bg-slate-800 pt-2 mt-4 pb-2 text-left'>
                             <div className='ml-4 flex justify-between w-11/12 text-left'>
-                                <Icon icon="akar-icons:statistic-up" color="white" height="25" inline={true} />
+                            <Icon icon="material-symbols:settings" color="#554e90" width="20" />
                                 <div className='w-4/5' >
-                                    <p className='text-white text-left'>Statistics</p> 
+                                    <p className='text-[#554e90] text-left'>Settings</p> 
                                 </div>
                             </div>    
                         </li>
                     </Link>
                     <Link to="admin">
-                        <li className='w-full items-center hover:bg-slate-800 pt-2 pb-2 text-left'>
+                        <li className='w-full items-center hover:bg-slate-800 pt-2 mt-4 pb-2 text-left'>
                             <div className='ml-4 flex justify-between w-11/12 text-left'> 
-                                <Icon icon="ic:baseline-admin-panel-settings" color="white" height="25" inline={true} />
+                                <Icon icon="material-symbols:admin-panel-settings-rounded" color="#554e90" width="20" />
                                 <div className='w-4/5'>
-                                    <p className='text-white text-left'>Admin Panel</p>
+                                    <p className='text-[#554e90] text-left'>Admin </p>
                                 </div>   
                             </div>                  
                         </li>
                     </Link>
                     <Link to="/settings">
-                        <li className='w-full hover:bg-slate-800 pt-2 pb-2   items-center'>
+                        <li className='w-full hover:bg-slate-800 pt-2 mt-4 pb-2   items-center'>
                             <div className='ml-4 flex justify-between w-11/12 text-left'>
-                                <Icon icon="ci:settings" color="white" height="25" inline={true} />
+                            <Icon icon="mdi:faq" color="#554e90" width="20" />
                                 <div className='w-4/5'>
-                                    <p className='text-white text-left'>Settings</p> 
+                                    <p className='text-[#554e90] text-left'>FAQ</p> 
                                 </div> 
                             </div>   
-                        </li>
-                    </Link>
-                    <Link to="/support">
-                        <li className='w-full hover:bg-slate-800 pt-2 pb-2 items-center'>
-                            <div className='ml-4 flex justify-between w-11/12 text-left' >
-                                <Icon icon="bx:help-circle" color="white" height="25" inline={true} />
-                                <div  className='w-4/5'>
-                                    <p className='text-white text-left'>Support</p> 
-                                </div>
-                            </div>
-                        </li>
-                    </Link>
-                    <Link to="/logout">
-                        <li className='w-full mt-20 hover:bg-slate-800 pt-2 pb-2 items-center'>
-                            <div className='ml-4 flex justify-between w-11/12 text-left' >
-                                <Icon icon="carbon:logout" color="white" height="25" inline={true} />
-                                <div  className='w-4/5'>
-                                    <p className='text-white text-left'>Logout</p> 
-                                </div>
-                            </div>
                         </li>
                     </Link>
                 </ul>
