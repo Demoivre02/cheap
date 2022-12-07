@@ -4,34 +4,47 @@ import DashboardSidenav from '../dashboardComponents/dashboard-sidenav'
 import { Switch,ChakraProvider } from '@chakra-ui/react'
 import { Icon } from '@iconify/react';
 import { useNavigate } from 'react-router-dom';
+import Sidemobilenav from '../dashboardComponents/dashboardMobileDrawer'
 
 function BuyAirtime() {
   const back= useNavigate()
 
   return (
     <div>
+      <div className='md:block hidden'> 
         <Dashboardtopnav/>
+      </div>
+
+
+          <div className='md:hidden block'>
+              <Sidemobilenav/>
+          </div>
+
+
         <div className='bg-[#F8F8F8] '>
 
-          <div className='w-[95%] m-auto flex  h-screen  justify-between'>
-            <DashboardSidenav/>
+          <div className='lg:w-[95%] w-full m-auto flex h-screen justify-between'>
 
-            <div className='w-[85%]'>
+          <div className='md:block hidden'> 
+              <DashboardSidenav/>
+            </div>
 
-            <div className='cursor-pointer  my-4' onClick={()=>{back(-1)}}>
+          <div className='lg:w-[85%] xl:ml-0 md:ml-16 ml-4 w-[90%] lg:m-0 '>
+
+            <div className='cursor-pointer md:block hidden  my-4' onClick={()=>{back(-1)}}>
                   <Icon icon="emojione-monotone:back-arrow" color="#333" width="30" />
             </div>
 
-            <div className='w-[55%] bg-[#fff] rounded-lg p-4 mt-4'>
+            <div className='md:w-[55%] w-full bg-[#fff] rounded-lg md:p-4 p-2 mt-4'>
 
 
-                     <p className='my-4'>Buy data</p>
-                     <input style={{border:"2px solid  #C4C4C4"}} className="w-[100%] p-2"  type={"num"} placeholder="Mobile number" />
+                     <p className='my-4 md:text-base text-[14px]' >Buy data</p>
+                     <input style={{border:"2px solid  #C4C4C4"}} className="md:w-[100%] w-[95%] md:p-2 p-1"  type={"num"} placeholder="Mobile number" />
 
                     <div>
-                        <p className='my-4'>Network Provider</p>
+                        <p className='my-4 md:text-base text-[14px]'>Network Provider</p>
 
-                        <div className='flex justify-between my-4'>
+                        <div className='flex justify-between md:w-full w-[95%] my-4'>
                             <img src='/assets/mtn.png' alt='mtn'/>
                             <img src='/assets/Glo.png' alt='mtn'/>
                             <img src='/assets/airtel.png' alt='mtn'/>
@@ -39,17 +52,17 @@ function BuyAirtime() {
 
                         </div>
 
-                        <select style={{border:"2px solid  #C4C4C4"}}  placeholder='plan' className=' p-2 my-4 w-[100%] rounded-lg'>
-                            <option>Amount</option>
-                            <option>500</option>
-                            <option>1000</option>
-                            <option>5000</option>
+                        <select style={{border:"2px solid  #C4C4C4"}}  placeholder='plan' className=' md:p-2 p-1 my-4 md:w-[100%] w-[95%] rounded-lg'>
+                            <option  className=' md:text-sm text-[12px]'>Amount</option>
+                            <option  className=' md:text-sm text-[12px]'>500</option>
+                            <option  className=' md:text-sm text-[12px]'>1000</option>
+                            <option  className=' md:text-sm text-[12px]'>5000</option>
                         </select>
 
                     </div>
                     
                     <div className='flex items-center'>  
-                        <p className='text-sm mr-2'>Save beneficiary</p>
+                        <p className='text-sm mr-2 md:text-base text-[14px]'>Save beneficiary</p>
                         <ChakraProvider>
                             <Switch colorScheme='green' size='sm' />
                         </ChakraProvider>

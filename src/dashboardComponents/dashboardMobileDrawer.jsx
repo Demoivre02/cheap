@@ -62,7 +62,7 @@ function Sidemobilenav() {
 
                 
               <ul className='justify-center items-center'>
-                    <Link to="dashboard">
+                    <Link to="/dashboard">
                         <li className='w-full  hover:bg-slate-800 pt-2 mt-4 pb-2'>
                             <div className='w-11/12 ml-4 flex justify-between items-center'>
                             <Icon icon="ep:suitcase" color="#554e90" width="20" />
@@ -72,7 +72,7 @@ function Sidemobilenav() {
                             </div>
                         </li>
                     </Link>
-                    <Link to="/transaction">
+                    <Link to="/fundwallet">
                         <li className='w-full hover:bg-slate-800 pt-2 mt-4 pb-2  items-center'>
                             <div className='ml-4 w-11/12 flex justify-between items-center'>
                             <Icon icon="material-symbols:account-balance-wallet" color="#554e90" width="20" />
