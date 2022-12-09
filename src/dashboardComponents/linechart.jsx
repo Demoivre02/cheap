@@ -50,7 +50,7 @@ export default function Linechart() {
         <Icon className="cursor-pointer" icon="material-symbols:more-vert" color="#333" width="30" />
       </div>
 
-      <div className="flex justify-between ml-5 border-2 p-3 my-6 w-[12%] items-center">
+      <div className="flex justify-between ml-5 lg:border-2 p-3 my-6 w-[12%] items-center">
         <p>Week</p>
         <Icon icon="material-symbols:arrow-drop-down" color="#333" width="25" />
       </div>

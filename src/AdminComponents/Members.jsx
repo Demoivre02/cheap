@@ -16,22 +16,22 @@ function Members() {
   return (
     <div>
             {membersArray.map((items)=>{
-             return   <div  className='justify-between flex p-2 items-center border border-b'>
+             return   <div  className='justify-between md:flex grid grid-cols-2 p-2 items-center border border-b'>
 
                     <div className='w-[5%]'>
                         <input type={"checkbox"} />
                     </div>
 
-                    <div className='w-[10%]'>
+                    <div className='md:w-[10%] w-[20%]'>
                         <img src={items.img} />
                     </div>
 
-                    <div className='w-[20%] text-left'>
+                    <div className='md:w-[20%] lg:text-base md:text-[14px] text-[12px] md:text-left'>
                         <p>{items.name}</p>
                         <p>{items.email}</p>
                     </div>
 
-                    <div>
+                    <div className=' lg:text-base md:text-[14px] text-[12px] '>
                         <p>{items.phhone}</p>
                     </div>
                     <div>

@@ -82,7 +82,7 @@ function Sidemobilenav() {
                             </div>     
                         </li>
                     </Link>
-                    <Link to="/userpanel">
+                    <Link to="/transaction">
                         <li className='w-full hover:bg-slate-800 pt-2 mt-4 pb-2 items-center text-left'>
                             <div className='ml-4 flex justify-between w-11/12 items-center'>
                             <Icon icon="ic:round-history" color="#554e90" width="20" />
@@ -92,7 +92,7 @@ function Sidemobilenav() {
                             </div>   
                         </li>
                     </Link>
-                    <Link to="statistics">
+                    <Link to="/settings">
                         <li className='w-full items-center hover:bg-slate-800 pt-2 mt-4 pb-2 text-left'>
                             <div className='ml-4 flex justify-between w-11/12 text-left'>
                             <Icon icon="material-symbols:settings" color="#554e90" width="20" />
@@ -102,7 +102,7 @@ function Sidemobilenav() {
                             </div>    
                         </li>
                     </Link>
-                    <Link to="admin">
+                    <Link to="/admin">
                         <li className='w-full items-center hover:bg-slate-800 pt-2 mt-4 pb-2 text-left'>
                             <div className='ml-4 flex justify-between w-11/12 text-left'> 
                                 <Icon icon="material-symbols:admin-panel-settings-rounded" color="#554e90" width="20" />
@@ -112,7 +112,7 @@ function Sidemobilenav() {
                             </div>                  
                         </li>
                     </Link>
-                    <Link to="/settings">
+                    <Link to="/faq">
                         <li className='w-full hover:bg-slate-800 pt-2 mt-4 pb-2   items-center'>
                             <div className='ml-4 flex justify-between w-11/12 text-left'>
                             <Icon icon="mdi:faq" color="#554e90" width="20" />

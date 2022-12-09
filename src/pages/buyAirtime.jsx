@@ -31,11 +31,11 @@ function BuyAirtime() {
 
           <div className='lg:w-[85%] xl:ml-0 md:ml-16 ml-4 w-[90%] lg:m-0 '>
 
-            <div className='cursor-pointer md:block hidden  my-4' onClick={()=>{back(-1)}}>
-                  <Icon icon="emojione-monotone:back-arrow" color="#333" width="30" />
-            </div>
+            <div className='md:w-[55%]  md:mx-auto w-full bg-[#fff] rounded-lg md:p-4 p-2 mt-4'>
 
-            <div className='md:w-[55%] w-full bg-[#fff] rounded-lg md:p-4 p-2 mt-4'>
+            <div className='cursor-pointer md:m-auto md:block hidden my-4' onClick={()=>{back(-1)}}>
+              <Icon icon="material-symbols:arrow-back-rounded" color="#333" width="30" />
+            </div>
 
 
                      <p className='my-4 md:text-base text-[14px]' >Buy data</p>

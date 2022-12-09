@@ -10,10 +10,10 @@ function Signup() {
         <p className='md:text-xl text-[14px] text-[#fff] p pt-16 mb-8 text-center m-auto md:w-[45%] w-[80%]'>Your search for cheap and reliable data ends here and now</p>
 
         <div className='lg:w-[55%] md:w-[80%]  w-[90%]  bg-[#fff] pb-12 text-center m-auto rounded-[10px] shadow-lg'>
-          <p className='text-2xl text-center pt-8 font-medium'>Create an Account </p>
+          <p className='text-2xl text-center pt-8 font-medium'>Welcome! </p>
 
           <div className='text-xl  w-[70%] m-auto md:mt-4 mt-1'>
-              <p className='text-center text-base'>Let’s get you started</p>
+              <p className='text-center text-base'>Login to your account</p>
           </div>
 
           <form className=''>
@@ -27,7 +27,7 @@ function Signup() {
 
             <Link to="/dashboard">
               <div className='md:p-3 p-2 bg-[#0E3F74] text-base md:mt-4 mt-8 hover:bg-transparent cursor-pointer hover:border-2 hover:text-[#0E3F74] text-[#fff] rounded-lg m-auto md:text-xl text-[12px] md:w-[45%] w-[80%]'>
-                Create Account
+                Login
               </div>
             </Link>
 

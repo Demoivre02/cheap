@@ -533,6 +533,8 @@ hr{
 .scroller-div{
     display: flex;
     overflow-x: hidden;
+    width: 100%;
+    margin: auto;
 }
 .scroller-div div{
     text-align: center;
@@ -618,7 +620,7 @@ hr{
     align-items: center;
     padding: 4em;
     background-color: #3E396B;
-    opacity: .4;
+    opacity: .9;
     border-radius: 100%;
     align-items: center;
     justify-content: center;
@@ -664,7 +666,7 @@ hr{
 .form-div{
     background-color: #3E396B;
     width: 680px;
-    height: 715px;
+    height: 615px;
     padding-bottom: 1em;
     border-radius: 5px;
 }
@@ -687,14 +689,14 @@ input.form-input,textarea{
     border: 0;
     outline: 0;
     width: 85%;
-    height: 76px;
+    height: 55px;
     margin: auto;
 }
 .submit-form{
     background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     width: 198px;
-    height: 76px;
+    height: 55px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;

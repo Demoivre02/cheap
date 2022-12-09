@@ -18,6 +18,7 @@ function FundWallet() {
           <div className='md:hidden block'>
             <Sidemobilenav/>
           </div>
+
         <div className='bg-[#F8F8F8] '>
 
           <div className='md:w-[95%] w-full m-auto flex h-screen justify-between'>
@@ -28,13 +29,12 @@ function FundWallet() {
 
             <div className='lg:w-[85%] xl:ml-0 md:ml-16 ml-4 w-[90%] lg:m-0 '>
 
-            <div className='cursor-pointer md:block hidden my-4' onClick={()=>{back(-1)}}>
-                  <Icon icon="emojione-monotone:back-arrow" color="#333" width="30" />
+        
+            <div className='md:w-[55%] w-full bg-[#fff]  md:mx-auto rounded-lg p-4 mt-6'>
+
+            <div className='cursor-pointer md:m-auto md:block hidden my-4' onClick={()=>{back(-1)}}>
+              <Icon icon="material-symbols:arrow-back-rounded" color="#333" width="30" />
             </div>
-
-
-
-            <div className='md:w-[55%] w-full bg-[#fff] rounded-lg p-4 mt-4'>
 
 
                      <p className='my-4 md:text-base text-[14px]'>Fund wallet</p>

@@ -4,48 +4,57 @@ import DashboardSidenav from '../dashboardComponents/dashboard-sidenav'
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import { useNavigate } from 'react-router-dom';
+import Sidemobilenav from '../dashboardComponents/dashboardMobileDrawer'
 
 function Settings() {
   const back= useNavigate()
 
   return (
     <div>
-        <Dashboardtopnav/>
+        <div className='md:block hidden'> 
+          <Dashboardtopnav/>
+        </div>
+
+        <div className='md:hidden block'>
+          <Sidemobilenav/>
+        </div>
+
         <div className='bg-[#F8F8F8] '>
 
-          <div className='w-[95%] m-auto flex  h-screen  justify-between'>
-            <DashboardSidenav/>
+          <div className='lg:w-[95%] w-full m-auto flex h-screen justify-between'>
 
-                <div className='w-[85%]'>
+            <div className='md:block hidden'> 
+              <DashboardSidenav/>
+            </div>
 
-                <div className='cursor-pointer my-4' onClick={()=>{back(-1)}}>
-                  <Icon icon="emojione-monotone:back-arrow" color="#333" width="30" />
-                </div>
+                <div className='lg:w-[85%] xl:ml-0 md:ml-16 ml-4 w-[90%] lg:m-0 '>
 
-                    <div className='w-[55%] bg-[#fff] rounded-lg p-4 mt-4'>
-                        <p className='font-semibold text-xl my-4'> Settings</p>
+     
 
-                        <div className='border-y p-3'>
+                    <div className='md:w-[55%] md:mx-auto w-full bg-[#fff] rounded-lg p-4 mt-4'>
+
+                    <div className='cursor-pointer md:m-auto md:block hidden my-4' onClick={()=>{back(-1)}}>
+                        <Icon icon="material-symbols:arrow-back-rounded" color="#333" width="30" />
+                    </div>
+                        <p className='font-semibold md:text-xl text-base md:my-4 my-2'> Settings</p>
+
+                        <div className='border-y md:p-3 md:text-base text-sm p-2'>
                             <Link to="/Profile">
                                 <p>Profile</p>
                             </Link>
                         </div>
 
-                        <div className='border-b p-3 my-2'>
+                        <div className='border-b md:p-3 md:text-base text-sm p-2 my-2'>
                             <Link to="/ChangerUserPassword">
                                 <p>Changer User Password</p>
                             </Link>
                         </div>
 
-                        <div className='border-b p-3 my-2'>
+                        <div className='border-b md:p-3 md:text-base text-sm p-2 my-2'>
                             <Link to="/ChangePin">
                                 <p>Change Pin</p>
                             </Link>
                         </div>
-
-
-
-
 
                     </div>
                 </div>

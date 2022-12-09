@@ -33,12 +33,12 @@ function Subscription() {
 
             <div className='lg:w-[85%] xl:ml-0 md:ml-16 ml-4 w-[90%] lg:m-0 '>
 
-            <div className='cursor-pointer md:block hidden my-4' onClick={()=>{back(-1)}}>
-                  <Icon icon="emojione-monotone:back-arrow" color="#333" width="30" />
-            </div>
-
             
-            <div className='bg-[#fff] rounded-lg md:w-[70%] w-full mt-4 md:p-4 p-3 md:py-8 py-2'>
+            <div className='bg-[#fff] rounded-lg md:w-[70%]  md:mx-auto w-full mt-4 md:p-4 p-3 md:py-8 py-2'>
+
+            <div className='cursor-pointer md:m-auto md:block hidden my-4' onClick={()=>{back(-1)}}>
+              <Icon icon="material-symbols:arrow-back-rounded" color="#333" width="30" />
+            </div>
 
                     <p className='my-4 md:text-base text-[14px]'>Pay Cable Bills</p>
                         <div className='grid grid-cols-2  md:gap-2 gap-4'>

@@ -7,12 +7,15 @@ import Sidemobilenav from '../dashboardComponents/dashboardMobileDrawer'
 function Dashboard() {
   return (
     <div >
-    <div className='md:block hidden'> 
-      <Dashboardtopnav/>
-    </div>
-    <div className='md:hidden block'>
-              <Sidemobilenav/>
-          </div>
+
+      <div className='md:block hidden'> 
+          <Dashboardtopnav/>
+      </div>
+
+      <div className='md:hidden block'>
+          <Sidemobilenav/>
+      </div>
+
         <div className='bg-[#F8F8F8] '>
 
           <div className='lg:w-[95%] w-full m-auto flex  justify-between'>

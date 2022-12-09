@@ -247,15 +247,15 @@ function Home() {
         <div className="scroller-div">
 
         <Swiper
-            slidesPerView={3}
+            slidesPerView={4}
             spaceBetween={3}
             pagination={{
             clickable: true
             }}
             >
-        <SwiperSlide>
+        <SwiperSlide className='w-[90%]'>
             <div>
-                <img src="/assets/image 1.png" alt=""/>
+                <img className='w-[90%]' src="/assets/image 1.png" alt=""/>
                 <div className="image-text-body">
                     <p className="scroller-img-text">Convert airtime to cash</p>
                 </div>
@@ -264,7 +264,7 @@ function Home() {
 
         <SwiperSlide>
             <div>
-                <img src="/assets/image 2.png" alt=""/>
+                <img className='w-[90%]' src="/assets/image 2.png" alt=""/>
                 <div className="image-text-body">
                     <p className="scroller-img-text">95% automated secure services</p>
                 </div>
@@ -272,7 +272,7 @@ function Home() {
         </SwiperSlide>
         <SwiperSlide>
             <div>
-                <img src="/assets/image 3.png" alt=""/>
+                <img className='w-[90%]' src="/assets/image 3.png" alt=""/>
                 <div className="image-text-body">
                 <p className="scroller-img-text">Instant and secure wallet funding</p> 
                 </div>
@@ -280,7 +280,7 @@ function Home() {
         </SwiperSlide>
         <SwiperSlide>     
             <div>
-                <img src="/assets/image 4.png" alt=""/>
+                <img className='w-[90%]' src="/assets/image 4.png" alt=""/>
                 <div className="image-text-body">
                     <p className="scroller-img-text">Available 24/7</p>
                 </div>
@@ -288,7 +288,7 @@ function Home() {
         </SwiperSlide>
         <SwiperSlide>
              <div>
-                <img src="/assets/image 5.png" alt=""/>
+                <img className='w-[90%]' src="/assets/image 5.png" alt=""/>
                 <div className="image-text-body">
                     <p className="scroller-img-text">Fastest deals and quick resolution services</p>
                 </div>
@@ -430,7 +430,7 @@ function Home() {
 <footer>
 <div className="footer-flex">
     <div className="one">
-        <h3>Cheapdatasale</h3>
+        <h3>Cheapdatasales</h3>
     </div>
 
     <div className="two">

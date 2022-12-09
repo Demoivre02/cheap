@@ -3,7 +3,7 @@ import TransactionArray from './transactionArray'
 
 function Mobilerecent({name,type,amount,date,status}) {
   return (
-    <div className='flex justify-between mb-2'>
+    <div className='flex md:hidden  justify-between mb-2'>
         <div className='flex justify-between items-center'>
             <div className='p-4 rounded-full bg-[#333333] mr-2'></div>
             <div className='md:flex sm:block mb-2'>

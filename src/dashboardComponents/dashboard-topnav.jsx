@@ -20,10 +20,9 @@ function Dashboardtopnav() {
                     </div>
                 </div>
 
-                <div className='flex justify-between items-center xl:w-[25%] w-[35%]' >
+                <div className='flex justify-between items-center xl:w-[20%] w-[35%]' >
 
-                    <Icon icon="mdi:line-scan" color="white" height="20" />
-                    <Icon icon="ph:bell" color="white" height="20" />
+                    <Icon icon="ph:bell" color="white" height="25" />
 
                     <div className='flex justify-between items-center'>
                         <div className='lg:p-4 p-2 rounded-full bg-[#fff] opacity-40'></div>
