@@ -49,6 +49,7 @@ import Adminpinsettings from "./AdminPages/adminPin";
 import CreditUser from "./AdminPages/creditUser";
 import EditUser from "./AdminPages/editUser";
 import Userhistory from "./AdminPages/userHistory";
+import AdminTransaction from "./pages/AdminTransaction";
 
 
 function App() {
@@ -118,6 +119,7 @@ function App() {
       <Route path="/adminPassword" element={<AdminPassword/>} />
       <Route path="/adminPin"  element={<AdminPin/>}/>
       <Route path="/managemembers" element={<ManageMembers/>}/>
+      <Route path="/admintransaction" element={<AdminTransaction/>}/>
     </Routes>
 
     {/* ADMIN-POPUP-PAGES */}

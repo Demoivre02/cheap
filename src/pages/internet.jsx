@@ -44,7 +44,7 @@ function Internet() {
       </div>
         <div className='bg-[#F8F8F8] '>
 
-          <div className='lg:w-[95%] w-full m-auto flex h-screen justify-between'>
+          <div className='lg:w-[95%] v w-full m-auto flex h-screen justify-between'>
 
 
           <div className='md:block hidden'> 

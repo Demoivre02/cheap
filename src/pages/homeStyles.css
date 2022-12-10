@@ -18,7 +18,13 @@ nav{
     background-color: #3E396B;
     padding: 10px;
     height: 84px;
+    margin: auto;
 }
+main,.hero-content,.footer-flex{
+    max-width: 1440px;
+    margin: auto;
+}
+
 .nav-container{
     display: flex;
     justify-content: space-between;

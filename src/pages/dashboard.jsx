@@ -18,7 +18,7 @@ function Dashboard() {
 
         <div className='bg-[#F8F8F8] '>
 
-          <div className='lg:w-[95%] w-full m-auto flex  justify-between'>
+          <div className='lg:w-[95%] w-full m-auto max-w-[1440px] flex  justify-between'>
 
             <div className='md:block hidden'> 
               <DashboardSidenav/>

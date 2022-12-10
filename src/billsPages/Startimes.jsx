@@ -21,7 +21,7 @@ function Startimes() {
           </div>
         <div className='bg-[#F8F8F8] '>
 
-          <div className='md:w-[95%] w-full m-auto flex h-screen justify-between'>
+          <div className='md:w-[95%] max-w-[1440px] w-full m-auto flex h-screen justify-between'>
             <DashboardSidenav/>
 
             <div className='lg:w-[85%] xl:ml-0 md:ml-16 ml-4 w-[90%] lg:m-0'>

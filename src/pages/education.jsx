@@ -48,7 +48,7 @@ function Education() {
 
         <div className='bg-[#F8F8F8] '>
 
-          <div className='lg:w-[95%] w-full m-auto flex h-screen justify-between'>
+          <div className='lg:w-[95%] max-w-[1440px] w-full m-auto flex h-screen justify-between'>
 
             <div className='md:block hidden'> 
               <DashboardSidenav/>
